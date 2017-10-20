@@ -1,0 +1,19 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import 'functions';
+@import 'mixins';
+@import 'colors';
+@import 'components/header.component';
+@import 'components/categorysidebar.component';
+@import 'components/productlisting.component';
+@import 'components/footer.component';
+
+body {
+  margin: 0;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: fontWeight(100);
+}
+
+.product-listing-sidebars {
+  width: 100%;
+  height: auto; 
+}

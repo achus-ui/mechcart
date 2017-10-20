@@ -1,0 +1,18 @@
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin transitions($prop, $time, $curve) {
+    -webkit-transition: $prop $time $curve;
+    -moz-transition: $prop $time $curve;
+    transition: $prop $time $curve;
+}
+
+@mixin translate($x, $y, $z) {
+    -webkit-transform: translate3d($x, $y, $z);
+    -moz-transform: translate3d($x, $y, $z);
+    transform: translate3d($x, $y, $z);
+}

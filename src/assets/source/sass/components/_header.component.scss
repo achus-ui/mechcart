@@ -1,0 +1,146 @@
+/**********************************************
+              Infobar Starts Here
+**********************************************/
+
+.info-bar {
+  width: 100%;
+  padding: 15px 0;
+  border-bottom: 1px solid $agent-color-1;
+  p {
+    font-size: fontSize(-2px);
+    font-weight: 700;
+    color: $secodary-color;
+    margin: 0;
+    position: relative;
+    &.last {
+      &:after {
+        display: none;
+      }
+    }
+    &:after {
+      content: "";
+      width: 1px;
+      height: 249%;
+      position: absolute;
+      top: -15px;
+      right: 0;
+      background: $agent-color-1;
+    }
+    i {
+      color: $primary-color;
+      margin-right: 5px;
+    }
+    a {
+      color: $secodary-color;
+      text-decoration: none;
+    }
+  }
+}
+
+/**********************************************
+              Infobar Ends Here
+**********************************************/
+
+/**********************************************
+            Logo Search Starts Here
+**********************************************/
+
+.logo-search-holder {
+  padding: 10px 0;
+  form {
+    display: inline-table;
+    button {
+      position: relative;
+      top: -4px;
+      background: $primary-color;
+      border-color: $primary-color;
+      @include border-radius(0);
+    }
+  }
+  ul.header-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 15px;
+    li {
+      float: right;
+      margin: 0 5px;
+      &:last-child {
+        i {
+          font-size: fontSize(16px);
+          border: 0;
+          color: $primary-color;
+          position: relative;
+          top: 1px;
+        }
+      }
+      i {
+        width: 32px;
+        height: 32px;
+        border: 1px solid #848484;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 32px;
+        font-size: fontSize(4px);
+        color: #848484;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+/**********************************************
+            Logo Search Ends Here
+**********************************************/
+
+/**********************************************
+          Main Navigation Starts Here
+**********************************************/
+
+nav {
+  &.main-navigation {
+    background: $agent-color-2;
+    padding: 15px 15px;
+    ul {
+      width: 100%;
+      position: relative;
+      li {
+        &.cart-info {
+          width: 15%;
+          height: 170%;
+          background: $primary-color;
+          position: absolute;
+          right: 0;
+          top: -15px;
+          color: $agent-color-3;
+          text-align: center;
+          cursor: pointer;
+          &:hover {
+            background: darken($primary-color, 10%);
+            @include transitions(0.3s, all, ease-in-out);
+          }
+          p {
+            margin: 0;
+            position: relative;
+            top: 20%;
+            i {
+              margin-right: 5px;
+            }
+          }
+        }
+        a {
+          &.nav-link {
+            color: $agent-color-3 !important;
+            text-transform: uppercase;
+            font-size: fontSize(2px);
+          }
+        }
+      }
+    }
+  }
+}
+
+/**********************************************
+          Main Navigation Ends Here
+**********************************************/

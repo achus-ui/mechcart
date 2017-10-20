@@ -1,0 +1,51 @@
+/*************************************************
+		 Category List Sidebar Starts Here
+*************************************************/
+
+.category-list {
+	width: 20%;
+	height: 100vh;
+	float: left;
+	border-right: 2px solid $agent-color-2;
+	h3 {
+		font-weight: fontWeight(100);
+		font-size: fontSize(2px);
+		color: $agent-color-2;
+		padding: 0 0 15px;
+		margin: 15px 0 0;
+		text-align: center;
+		border-bottom: 2px solid $primary-color;
+		i {
+			margin-left: 8px;
+			color: $primary-color;
+		}
+	}
+	ul {
+		&.product-categories {
+			max-height: 92vh;
+    		overflow-y: auto;
+			li {
+				border: 0;
+				border-bottom: 1px solid $agent-color-2;
+				padding: 5px 15px;
+				margin: 0 !important;
+				text-align: left;
+				font-size: fontSize(0);
+				background: $agent-color-3;
+				@include border-radius(0);
+				&:last-child {
+					border-bottom: 0;
+				}
+				&:hover {
+					cursor: pointer;
+					background: #eee;
+					@include transitions(0.3s, all, ease-in);
+				}
+			}
+		}
+	}
+}
+
+/*************************************************
+		 Category List Sidebar Ends Here
+*************************************************/
