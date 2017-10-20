@@ -6,5 +6,5 @@ npm install inside mechcart repo
 
 After successfull npm install, please use ng serve command for run the project
 
-For taking build, use the below mentioned command
+For taking build, use the below mentioned command <br>
 ng build --prod
