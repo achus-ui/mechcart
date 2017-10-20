@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategorySidebarComponent implements OnInit {
 
+  public scrollbarOptions = { axis: 'y', theme: 'minimal-dark' };
+
   constructor() { }
 
   ngOnInit() {

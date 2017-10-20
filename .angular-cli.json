@@ -21,11 +21,13 @@
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap-reboot.min.css",
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css",
         "assets/css/lib/font-awesome.min.css",
         "assets/source/sass/main.scss"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js",
         "assets/js/lib/popper.min.js",
         "../node_modules/bootstrap/dist/js/bootstrap.min.js"
       ],

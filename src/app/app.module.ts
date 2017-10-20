@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { MalihuScrollbarModule } from 'ngx-malihu-scrollbar';
 
 import 'hammerjs';
 
@@ -27,6 +28,7 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     FormsModule,
+    MalihuScrollbarModule.forRoot(),
     MatInputModule,
     MatSelectModule,
     MatButtonModule,
